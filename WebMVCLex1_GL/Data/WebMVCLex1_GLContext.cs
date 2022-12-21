@@ -15,5 +15,6 @@ namespace WebMVCLex1_GL.Data
         }
 
         public DbSet<WebMVCLex1_GL.Models.Car> Car { get; set; } = default!;
+        public DbSet<Customer> Customers { get; set; }
     }
 }

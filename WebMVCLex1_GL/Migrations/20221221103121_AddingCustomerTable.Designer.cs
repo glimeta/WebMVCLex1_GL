@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebMVCLex1_GL.Data;
 
@@ -10,9 +11,10 @@ using WebMVCLex1_GL.Data;
 namespace WebMVCLex1_GL.Migrations
 {
     [DbContext(typeof(WebMVCLex1_GLContext))]
-    partial class WebMVCLex1_GLContextModelSnapshot : ModelSnapshot
+    [Migration("20221221103121_AddingCustomerTable")]
+    partial class AddingCustomerTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
